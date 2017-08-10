@@ -4,16 +4,16 @@
 
 # Site
 title: 李刚的博客
-subtitle:
-description:
-author: lg
-language: zh
-timezone:
+subtitle: Talk is cheap. Show me the code.
+description: 
+author: 李刚
+language: zh-CN
+timezone: Asia/Chongqing
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://lg8294.cn/myblog
+root: /myblog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -33,7 +33,7 @@ default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
-render_drafts: false
+render_drafts: true
 post_asset_folder: false
 relative_link: false
 future: true
@@ -72,11 +72,15 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: jacman
+stylus:
+  compress: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: https://github.com/lg8294/lg8294.github.io.git
   branch: dev
+- type: git
+  repo: https://github.com/lg8294/myblog.git
