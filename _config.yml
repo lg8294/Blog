@@ -79,8 +79,8 @@ stylus:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  repo: https://github.com/lg8294/lg8294.github.io.git
-  branch: dev
+#- type: git
+ # repo: https://github.com/lg8294/lg8294.github.io.git
+ # branch: dev
 - type: git
   repo: https://github.com/lg8294/myblog.git
