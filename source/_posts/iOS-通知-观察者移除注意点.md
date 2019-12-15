@@ -27,7 +27,7 @@ tags:
     
     // for variables
     NSObject *__unsafe_unretained unsafeReference;
-    ```
+    ```  
     
     不安全引用（unsafe reference）和弱引用 (weak reference) 类似，它并不会让被引用的对象保持存活，但是和弱引用不同的是，当被引用的对象释放的时，不安全引用并不会自动被置为 nil，这就意味着它变成了野指针，而对野指针发送消息会导致程序崩溃。
     
